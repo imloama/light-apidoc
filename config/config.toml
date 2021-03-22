@@ -1,28 +1,13 @@
 # HTTP Server
 [server]
-	Address     = ":8199"
+	Address     = ":9279"
 	ServerRoot  = "public"
-	ServerAgent = "gf-app"
-	LogPath     = "/tmp/log/gf-app/server"
+	ServerAgent = "apidoc"
+	LogPath     = "./logs/server"
 
 # Logger.
 [logger]
-    Path        = "/tmp/log/gf-app"
+    Path        = "./logs"
     Level       = "all"
     Stdout      = true
 
-# Template.
-[viewer]
-    Path        = "template"
-    DefaultFile = "index.html"
-    Delimiters  =  ["${", "}"]
-
-# Database.
-[database]
-    link  = "mysql:root:12345678@tcp(127.0.0.1:3306)/test"
-    debug = true
-    # Database logger.
-    [database.logger]
-        Path   = "/tmp/log/gf-app/sql"
-        Level  = "all"
-        Stdout = true
