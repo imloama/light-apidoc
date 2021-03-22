@@ -10,5 +10,11 @@
     "url": "/json/swagger1.json",
     "swaggerVersion": "2.0",
     "location": "/json/swagger1.json"
+  },
+  {
+    "name": "go",
+    "url": "/json/go.json",
+    "swaggerVersion": "2.0",
+    "location": "/json/go.json"
   }
 ]
